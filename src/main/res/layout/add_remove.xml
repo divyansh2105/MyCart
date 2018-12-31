@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="removebuttonclicked"
+        android:text="REMOVE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="182dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="addbuttonclicked"
+        android:text="ADD"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/screen"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ram"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/company"
+        android:layout_alignTop="@+id/price"
+        android:ems="10"
+        android:hint="RAM"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/storage"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ram"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Storage"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/screen"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/battery"
+        android:layout_alignTop="@+id/storage"
+        android:ems="10"
+        android:hint="Screen"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/battery"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/type"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:hint="Battery"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/front_camera"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/ram"
+        android:layout_alignTop="@+id/battery"
+        android:ems="10"
+        android:hint="Front Camera"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rear_camera"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ram"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Rear Camera"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/rear_camera"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Type(Mobile/Tablet)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/company_delete"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="Company"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/price"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-67dp"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:hint="Company"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/model_delete"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/price"
+        android:layout_alignTop="@+id/company_delete"
+        android:ems="10"
+        android:hint="Model"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="148dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/price"
+        android:layout_alignStart="@+id/price"
+        android:layout_marginBottom="-67dp"
+        android:ems="10"
+        android:hint="Model"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
